@@ -1,0 +1,301 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin-top: 60px;
+}
+
+#contact h1 {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  float: right;
+}
+
+/* Adjust description container styles */
+.description-container {
+  position: relative; /* Maintain this as it allows absolute positioning */
+  padding: 0; /* No additional padding */
+  z-index: 1;
+}
+
+/* Adjust the description text to sit on top of the box */
+.description {
+  position: absolute; /* Position it absolutely */
+  top: 200px; /* Adjust this value to move it over the border */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Ensure it's perfectly centered */
+  text-align: center; /* Center the text */
+  font-size: 42px; /* Text size */
+  font-family: "Roboto";
+  /* display: block; */
+  /* padding: 20px 25px; */
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255, 87, 87, 0.6);
+  transition: all 300ms ease;
+  /* font-family: "Gloock"; */
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase; /* Uppercase text */
+  margin: 0; /* Reset margin */
+  width: 600px;
+  background: #fff;
+}
+
+/* Adjust the box to have proper spacing */
+.box {
+  border: solid 0.1rem #ff5757;
+  border-radius: 15rem;
+  display: flex;
+  flex-direction: column; /* Flex column for layout */
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px; /* Add more top padding to ensure text of box interior */
+  width: 1200px;
+  height: 350px;
+  position: relative; /* Ensure the box is positioned */
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create two columns that float next to each other */
+.column {
+  float: left;
+  width: 50%; /* Change to 50% on each column for better layout */
+}
+
+/* Style the container/contact section */
+.contact-container {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 10px; Add some space above the icons */
+  margin-bottom: 25px;
+  height: 16rem;
+  padding: 10px;
+}
+
+.links-container i,
+.links-container p {
+  display: inline-block; /* Allow both elements to sit side by side */
+  vertical-align: middle; /* Center them vertically */
+  margin: 0 10px; /* Space between icons and text */
+}
+
+.links-container i {
+  font-size: 80px; /* Adjust the icon size (change as necessary) */
+  color: #333; /* Change color to make it visible */
+  padding: 15px;
+}
+
+.links-container p {
+  margin: 5px; /* Space between the icons and the text */
+  color: #333; /* Change text color for visibility */
+  font-family: "Roboto";
+  font-size: 20px;
+}
+
+.links-container a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.links-container a:hover i {
+  color: #ff5757; /* Change icon color on hover for a better user experience */
+  transition: all 0.5s ease;
+}
+
+/* FOOTER */
+.footer {
+  background-color: rgb(24, 28, 31);
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.footer p {
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+  font-family: "Roboto";
+}
+
+/* Footer Styles */
+footer {
+  background-color: rgb(24, 28, 31);
+  color: #fff; /* White text */
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Spacing between elements */
+}
+
+/* Socials Container */
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Add spacing between the image and link */
+}
+
+/* GitHub Icon Styles */
+.github-icon {
+  width: 30px; /* Reduce the width to make it smaller */
+  height: auto; /* Maintain the aspect ratio */
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg); /* Default white color */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover effects */
+}
+
+.github-icon:hover {
+  transform: scale(1.2); /* Slightly enlarge on hover */
+  filter: brightness(0) saturate(100%) invert(64%) sepia(84%) saturate(5197%)
+    hue-rotate(331deg) brightness(112%) contrast(99%);
+  transition: transform 0.3s ease;
+}
+
+/* GitHub Link */
+.github-link {
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  #contact h1 {
+    font-size: 100px; /* Reduced font size for medium screens */
+  }
+  .footer {
+    padding: 20px; /* Increase padding */
+  }
+
+  .footer p {
+    font-size: 20px; /* Adjust font size for footer */
+  }
+}
+
+@media (max-width: 1200px) {
+  #contact h1 {
+    font-size: 100px; /* Reduced font size for medium screens */
+  }
+  .footer {
+    padding: 20px; /* Increase padding */
+  }
+
+  .footer p {
+    font-size: 16px; /* Adjust font size for footer */
+  }
+}
+
+/* ------------------ TABLET MEDIA QUERY ------------------ */
+@media screen and (max-width: 900px) {
+  /* General styles for contact section */
+
+  #contact h1 {
+    margin-top: 30px; /* Reduce top margin */
+    margin-bottom: 60px; /* Reduce bottom margin */
+    text-align: center; /* Center align heading text */
+    font-size: 80px; /* Adjust font size */
+  }
+
+  .description-container {
+    padding: 20px; /* Add some padding */
+  }
+
+  .description {
+    top: 160px; /* Adjust vertically for smaller screens */
+    font-size: 38px; /* Reduce font size */
+    width: 50%; /* Make width responsive */
+  }
+
+  .box {
+    width: 600px; /* Make box width responsive */
+    padding: 30px; /* Reduce padding */
+    height: auto; /* Let the height adjust automatically */
+  }
+
+  /* Columns styling for smaller screens */
+  .row {
+    display: flex; /* Use flexbox for columns */
+    flex-direction: column; /* Stack columns on small screens */
+  }
+
+  .column {
+    width: 100%; /* Full width for each column */
+    text-align: center; /* Center align text in columns */
+  }
+
+  .links-container {
+    height: auto; /* Let links container height adjust */
+  }
+
+  .links-container i {
+    font-size: 60px; /* Adjust icon size */
+  }
+
+  .links-container p {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  /* Footer adjustments */
+  .footer {
+    padding: 20px; /* Increase padding */
+  }
+
+  .footer p {
+    font-size: 12px; /* Adjust font size for footer */
+  }
+}
+/* MOBILE */
+
+@media (max-width: 600px) {
+  #contact h1 {
+    margin-top: 20px;
+    font-size: 60px; /* Reduces font size for mobile devices */
+    float: none; /* Remove floating for smaller screens */
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .description {
+    position: absolute; /* Position it absolutely */
+    text-align: center; /* Center the text */
+    font-size: 28px; /* Text size */
+    width: 200px;
+    top: 30px; /* Adjust this value to move it over the border */
+    padding: 10px;
+    background-color: #fff;
+  }
+
+  .box {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 100px;
+  }
+
+  .links-container i {
+    font-size: 60px; /* Adjust the icon size (change as necessary) */
+  }
+
+  .links-container p {
+    font-size: 20px;
+  }
+}

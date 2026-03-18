@@ -1,0 +1,85 @@
+/* Media Queries for Mobile and Tablet Viewports */
+@media screen and (max-width: 1200px) {
+  #navbar {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+}
+
+/* Media Queries for Tablets and Mobile Phones */
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: none; /* Hide navbar on mobile */
+    flex-direction: column; /* Stack vertically */
+    width: 100%; /* Full width */
+  }
+
+  .navbar-links ul {
+    flex-direction: column; /* Stack the menu */
+    width: 100%; /* Full width */
+    padding: 10px; /* Add padding */
+  }
+
+  .navbar-links ul li {
+    margin: 5px 0; /* Vertical spacing between items */
+  }
+
+  #navbar {
+    flex-direction: column; /* Stack navbar elements */
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    font-size: 4vw; /* Scale text for smaller screens */
+  }
+
+  .services-box {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for services */
+  }
+
+  .hero-columns {
+    flex-direction: column; /* Stack columns on mobile */
+    align-items: stretch; /* Stretch columns to full width */
+    width: 100%; /* Full width on mobile */
+  }
+
+  .hero-column-1,
+  .hero-column-2 {
+    width: 100%; /* Full width for columns on small devices */
+    padding: 10px 0; /* Vertical padding for better spacing on mobile */
+  }
+
+  .hero-column-2 {
+    display: flex; /* Ensure button column uses flexbox in mobile */
+    justify-content: center; /* Center the button */
+  }
+
+  .button-prev,
+  .button-next {
+    top: 30%; /* Adjust button position for smaller screens */
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+  #navbar {
+    height: auto; /* Adjust height */
+  }
+
+  .slider {
+    height: 300px; /* Reduce height for mobile */
+  }
+
+  .about-container-2 {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .about-container-3 {
+    padding: 10px; /* Reduce padding */
+  }
+}

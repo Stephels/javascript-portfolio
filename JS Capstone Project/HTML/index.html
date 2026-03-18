@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/mediaqueries.css" />
+    <link rel="stylesheet" href="/CSS/hero.css" />
+    <link rel="stylesheet" href="/CSS/about.css" />
+    <link rel="stylesheet" href="/CSS/services.css" />
+    <link rel="stylesheet" href="/CSS/testimonials.css" />
+    <link rel="stylesheet" href="/CSS/portfolio.css" />
+    <link rel="stylesheet" href="/CSS/contact.css" />
+    <link rel="stylesheet" href="/CSS/popup.css">
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Gloock&family=Poppins:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
+  </head> 
+  <body>
+    <div id="progress">
+  <a href="#hero">
+    <img src="/Images/HomeLogo.png" alt="Logo" id="progress-value" />
+  </a>
+</div>
+    <nav id="navbar">
+      <div class="logo">
+        <a href="#hero"><img src="/Images/HomeLogo.png" alt="Logo" /></a>
+      </div>
+      <div>
+        <ul class="navbar-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#hero" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+            <li>
+              <a href="#testimonials" onclick="toggleMenu()">Testimonials</a>
+            </li>
+            <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<section id="hero">
+  <div class="hero-container">
+    <div class="header head-row1">
+      <p id="hello">Hi, my name is</p>
+      <h2 id="name">Steph Hochfelden.</h2>
+    </div>
+    <div class="main hero-col1">
+      <div class="img-container-1">
+        <img id="profile" src="/Images/DesignerCoder.png" alt="profile1">
+      </div>
+    </div>
+    <div class="main hero-col2">
+      <div class="row2-hero-text">
+        <p id="text-1">
+          I'm a proud <br>
+          <span id="text-2">Full Stack Web Developer</span>
+          <span id="text-3"><br>based in Cape Town, SA.</span>
+        </p>
+      </div>
+      <div class="row2-hero-text">
+        <p id="text-4">I enjoy turning complex problems into simple, beautiful, and intuitive designs.<br>
+          This is my portfolio, showcasing my JavaScript, HTML, and CSS skills.
+        </p>
+        <div class="hero-btn-container">
+  <a href="#portfolio" class="hero-btn">My Work</a>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about">
+  <div class="about-container">
+    <h1>About.</h1>
+    <div class="about-content">
+      <h2>My Career</h2>
+      <p id="para">
+        I am an enthusiastic full-stack web developer in training, passionate
+        about merging technology, design, and creativity to craft user-focused
+        and innovative software solutions. My journey in technology has been
+        fueled by an intensive Full-Stack Web Development program, where I’ve
+        gained hands-on experience with core technologies like JavaScript, HTML,
+        CSS, React, MongoDB, Git, and Node.js. In addition, I’ve explored
+        specialized frameworks, such as Next.js, to deepen my expertise and
+        strengthen my capabilities as a developer.
+        <br />
+        <br />
+        My diverse background in art, graphic design, and Communications, paired
+        with Web Design certifications, provides a creative edge in my approach
+        to development projects. This combination allows me to ensure my work
+        isn’t just functional, but also visually engaging and user-centric.
+      </p>
+      <h2>Things I'm doing</h2>
+      <p id="para">
+        Currently, I am diving deep into projects that push the boundaries of
+        web development, actively sharpening my skills in modern tools and
+        technologies. I’m focusing on building real-world applications,
+        collaborating with teams, and experimenting with frameworks and
+        methodologies that broaden my practical experience. Alongside my
+        technical training, I leverage my experience in social media, marketing,
+        and sales to integrate SEO strategies and effective content creation
+        into my work.
+      </p>
+      <p id="sub-subheading">Fun Fact</p>
+      <p id="lines-sub-subheading">
+        I’ve been immersed in the wine industry for over a decade, and I’m
+        currently expanding my knowledge through short courses at The Cape Wine
+        Academy. The history, science, and art of wine production continue to
+        fascinate me.
+      </p>
+      <h2>The Journey Ahead</h2>
+      <p id="para">
+        Looking ahead, I am excited to contribute to impactful projects and
+        explore opportunities in mobile development, leadership roles, and new
+        frontiers in the tech industry. My goal is to keep growing both as a
+        developer and as a collaborator, always striving to create solutions
+        that leave a lasting mark.
+      </p>
+    </div>
+  </div>
+</section>
+<section id="skills_tools">
+  <div class="tools-container">
+    <h2 class="tools-title">Tools.</h2>
+    <div class="tools-cards">
+      <div class="tool-card">
+        <img
+          src="/Images/Skills&Tools Icons/Git.png"
+          alt="Git Logo"
+          class="tool-img"
+        />
+        <h3 class="tool-name">Git</h3>
+      </div>
+      <div class="tool-card">
+        <img
+          src="/Images/Skills&Tools Icons/GitHubWhite.png"
+          alt="GitHub Logo"
+          class="tool-img"
+        />
+        <h3 class="tool-name">GitHub</h3>
+      </div>
+      <div class="tool-card">
+        <img
+          src="/Images/Skills&Tools Icons/Visual Studio Code.png"
+          alt="VS Code Logo"
+          class="tool-img"
+        />
+        <h3 class="tool-name">Visual Studio Code</h3>
+      </div>
+      <div class="tool-card">
+        <img
+          src="/Images/Skills&Tools Icons/canva.png"
+          alt="Canva Logo"
+          class="tool-img"
+        />
+        <h3 class="tool-name">Canva</h3>
+      </div>
+    </div>
+  </div>
+  <div class="skills-container">
+    <h2>Skills.</h2>
+    <div class="skills-buttons">
+      <button class="skill-btn" data-skill="frontend">Front-End</button>
+      <button class="skill-btn" data-skill="backend">Back-End</button>
+      <button class="skill-btn" data-skill="webdev">Web Development</button>
+    </div>
+    <div class="skills-grid" id="skills-grid"></div>
+  </div>
+</section>
+    <section id="services">
+  <div class="services-h1">
+    <h1>Services.</h1>
+  </div>
+  <div class="container-serv">
+    <div class="services-box">
+      <div class="service">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img
+                src="/images/Services Icons/app-development.png"
+                alt="icon"
+              />
+              <h2>Web Application Development</h2>
+            </div>
+            <div class="flip-box-back">
+              <ul>
+                <li>Full-stack development of custom web applications.</li>
+                <li>Development of single-page applications (SPAs).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img
+                src="/images/Services Icons/user-experience.png"
+                alt="icon"
+              />
+              <h2>Front-End Development</h2>
+            </div>
+            <div class="flip-box-back">
+              <ul>
+                <li>
+                  Creation of responsive and visually appealing user interfaces.
+                </li>
+                <li>
+                  Implementation of user experience (UX) design best practices.
+                </li>
+                <li>
+                  Proficiency in HTML, CSS, and JavaScript frameworks (e.g.,
+                  React, Angular, Vue.js).
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="/images/Services Icons/development.png" alt="icon" />
+              <h2>Back-End Development</h2>
+            </div>
+            <div class="flip-box-back">
+              <ul>
+                <li>Server-side development using languages like Node.js.</li>
+                <li>
+                  Building and maintaining server logic and database
+                  interactions.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img
+                src="/images/Services Icons/database-management.png"
+                alt="icon"
+              />
+              <h2>Database Management</h2>
+            </div>
+            <div class="flip-box-back">
+              <ul>
+                <li>Design and development of SQL and NoSQL databases.</li>
+                <li>Database optimization and data modeling.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="/images/Services Icons/integration.png" alt="icon" />
+              <h2>API Development & Integration</h2>
+            </div>
+            <div class="flip-box-back">
+              <ul>
+                <li>
+                  Creating RESTful APIs for seamless communication between the
+                  front-end and back-end.
+                </li>
+                <li>
+                  Integrating third-party APIs for additional functionality
+                  (payment gateways, social media, etc.).
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="/images/Services Icons/authentication.png" alt="icon" />
+              <h2>User Authentication & Security</h2>
+            </div>
+            <div class="flip-box-back">
+              <ul>
+                <li>Implementation of secure user authentication systems.</li>
+                <li>
+                  Setting up role-based access control and data protection
+                  measures.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="/images/Services Icons/responsive.png" alt="icon" />
+              <h2>Responsive Design</h2>
+            </div>
+            <div class="flip-box-back">
+              <ul>
+                <li>
+                  Ensuring websites are mobile-friendly and work across all
+                  devices and screen sizes.
+                </li>
+                <li>
+                  Utilization of frameworks like Bootstrap and CSS Grid/Flexbox.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="/images/Services Icons/performance.png" alt="icon" />
+              <h2>Performance Optimization</h2>
+            </div>
+            <div class="flip-box-back">
+              <ul>
+                <li>
+                  Conducting performance analysis and implementing strategies to
+                  enhance loading speeds and user experience.
+                </li>
+                <li>Utilizing caching and content delivery networks (CDNs).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img
+                src="/images/Services Icons/software-testing.png"
+                alt="icon"
+              />
+              <h2>Testing & Debugging</h2>
+            </div>
+            <div class="flip-box-back">
+              <ul>
+                <li>
+                  Performing unit, integration, and end-to-end testing to ensure
+                  application reliability.
+                </li>
+                <li>Debugging issues and maintaining code quality.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="/images/Services Icons/deployment.png" alt="icon" />
+              <h2>Deployment & Hosting</h2>
+            </div>
+            <div class="flip-box-back">
+              <ul>
+                <li>
+                  Managing the deployment process and configuring hosting
+                  environments.
+                </li>
+                <li>
+                  Setting up and maintaining continuous integration and
+                  deployment (CI/CD) pipelines.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="/images/Services Icons/tool.png" alt="icon" />
+              <h2>Maintenance & Support</h2>
+            </div>
+            <div class="flip-box-back">
+              <ul>
+                <li>
+                  Offering ongoing maintenance, updates, and technical support
+                  for existing applications.
+                </li>
+                <li>Troubleshooting and resolving user-reported issues.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="/images/Services Icons/management.png" alt="icon" />
+              <h2>Consultation & Project Management</h2>
+            </div>
+            <div class="flip-box-back">
+              <ul>
+                <li>
+                  Providing consultation for new projects and advising on
+                  technology stacks.
+                </li>
+                <li>
+                  Project management services to ensure timely delivery and meet
+                  client expectations.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="/images/Services Icons/cms.png" alt="icon" />
+              <h2>Content Management Systems (CMS)</h2>
+            </div>
+            <div class="flip-box-back">
+              <ul>
+                <li>
+                  Developing and customizing CMS platforms (e.g., WordPress) for
+                  easy content updates.
+                </li>
+                <li>Training clients on how to use their CMS effectively.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="/images/Services Icons/accessibility.png" alt="icon" />
+              <h2>Web Accessibility Compliance</h2>
+            </div>
+            <div class="flip-box-back">
+              <ul>
+                <li>
+                  Ensuring that websites meet accessibility standards (e.g.,
+                  WCAG) for users with disabilities.
+                </li>
+                <li>Implementing best practices for inclusive design.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="/images/Services Icons/seo.png" alt="icon" />
+              <h2>SEO Optimization</h2>
+            </div>
+            <div class="flip-box-back">
+              <ul>
+                <li>
+                  Implementing search engine optimization strategies to improve
+                  visibility and rankings in search engines.
+                </li>
+                <li>
+                  Providing advice on best practices for content and technical
+                  SEO.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img
+                id="logo"
+                src="/images/Services Icons/SHblack.png"
+                alt="logo"
+              />
+            </div>
+            <div class="flip-box-back">
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section id="testimonials" class="clearfix">
+    <div class="testimonials-container">
+        <div class="testimonials-h1">
+            <h1>Testimonials.</h1>
+        </div>
+        <div class="slider">
+          <button id="prev" class="button-prev"></button>  
+            <div class="list">
+                <div class="item">
+                    <img src="/Images/Testimonial Images/SH_ident.png" alt="sh" class="item-image" />
+               <div class="col-item-text">
+                      <div class="row"><p id="row-1">Testimonial</p></div>
+                      <div class="row"><p id="row-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eveniet, in ducimus omnis facilis eaque iusto saepe fugit, voluptatibus quos cum obcaecati odit! Impedit nobis aliquid perspiciatis aspernatur hic quas."</p></div>
+                        <div class="row"><p id="row-3">- Pleased User</p></div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/Images/Testimonial Images/CWCBlue.png" alt="cwc" class="item-image" />
+                    <div class="col-item-text">
+                      <div class="row"><p id="row-1">"Highly recommend her work!"</p></div>
+                      <div class="row"><p id="row-2">"Steph has done an incredible job designing, customizing, and regularly maintaining my WordPress website. Her expertise has helped attract a significant amount of new clientele. She also manages our company’s social media and is highly skilled in SEO."</p></div>
+                        <div class="row"><p id="row-3">- Carol T</p></div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/Images/Testimonial Images/SH_ident.png" alt="sh" class="item-image" />
+                   <div class="col-item-text">
+                      <div class="row"><p id="row-1">Testimonial</p></div>
+                      <div class="row"><p id="row-2">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eveniet, in ducimus omnis facilis eaque iusto saepe fugit, voluptatibus quos cum obcaecati odit! Impedit nobis aliquid perspiciatis aspernatur hic quas."</p></div>
+                        <div class="row"><p id="row-3">- Pleased User</p></div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/Images/Testimonial Images/WG_ident.png" alt="wg" class="item-image" />
+                  <div class="col-item-text">
+                      <div class="row"><p id="row-1">"Working with Stephanie has been an absolute pleasure!"</p></div>
+                      <div class="row"><p id="row-2">"She exceeded my expectations by not only building a stunning and functional WordPress website but also optimizing it for SEO and enhancing my social media marketing. Her technical expertise, attention to detail, and creative problem-solving skills were evident throughout the project. Thanks to her, my online presence has grown significantly, and I couldn’t be happier with the results. Highly recommended!"</p></div>
+                        <div class="row"><p id="row-3">- David T</p></div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/Images/Testimonial Images/SH_ident.png" alt="sh" class="item-image" /> 
+                 <div class="col-item-text">
+                      <div class="row"><p id="row-1">Testimonial</p></div>
+                      <div class="row"><p id="row-2">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eveniet, in ducimus omnis facilis eaque iusto saepe fugit, voluptatibus quos cum obcaecati odit! Impedit nobis aliquid perspiciatis aspernatur hic quas."</p></div>
+                        <div class="row"><p id="row-3">- Pleased User</p></div> 
+                    </div>
+                </div>
+            </div>
+            <button id="next" class="button-prev"></button> 
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<div>
+  <h2 id="brands">featured brands</h2>
+</div>
+      <div class="slider-2">
+        <div class="logo-slider-2">
+          <div>
+            <img
+              alt="calmwecare"
+              id="cwc"
+              src="/Images/Testimonial Images/CWC_ident.png"
+            />
+            <img alt="wglondon" id="wg" src="/Images/Testimonial Images/WG_ident.png" />
+            <img
+              alt="calmwecare"
+              id="cwc"
+              src="/Images/Testimonial Images/CWC_ident.png"
+            />
+            <img alt="wglondon" id="wg" src="/Images/Testimonial Images/WG_ident.png" />
+            <img
+              alt="calmwecare"
+              id="cwc"
+              src="/Images/Testimonial Images/CWC_ident.png"
+            />
+            <img alt="wglondon" id="wg" src="/Images/Testimonial Images/WG_ident.png" />
+            <img
+              alt="calmwecare"
+              id="cwc"
+              src="/Images/Testimonial Images/CWC_ident.png"
+            />
+            <img alt="wglondon" id="wg" src="/Images/Testimonial Images/WG_ident.png" />
+            <img
+              alt="calmwecare"
+              id="cwc"
+              src="/Images/Testimonial Images/CWC_ident.png"
+            />
+            <img alt="wglondon" id="wg" src="/Images/Testimonial Images/WG_ident.png" />
+          </div>
+          <div>
+            <img
+              alt="calmwecare"
+              id="cwc2"
+              src="/Images/Testimonial Images/CWC_ident.png"
+            />
+            <img alt="chevrolet logo" id="wg2" src="/Images/Testimonial Images/WG_ident.png" />
+            <img
+              alt="calmwecare"
+              id="cwc2"
+              src="/Images/Testimonial Images/CWC_ident.png"
+            />
+            <img alt="wglondon" id="wg2" src="/Images/Testimonial Images/WG_ident.png" />
+            <img
+              alt="calmwecare"
+              id="cwc2"
+              src="/Images/Testimonial Images/CWC_ident.png"
+            />
+            <img alt="wglondon" id="wg2" src="/Images/Testimonial Images/WG_ident.png" />
+            <img
+              alt="calmwecare"
+              id="cwc2"
+              src="/Images/Testimonial Images/CWC_ident.png"
+            />
+            <img alt="wglondon" id="wg2" src="/Images/Testimonial Images/WG_ident.png" />
+            <img
+              alt="calmwecare"
+              id="cwc2"
+              src="/Images/Testimonial Images/CWC_ident.png"
+            />
+            <img alt="wglondon" id="wg2" src="/Images/Testimonial Images/WG_ident.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+<section id="portfolio" class="clearfix">
+  <!-- Popup Section -->
+  <div id="custom-popup" class="popup-overlay">
+    <div class="popup-content">
+      <div class="popup-col-1">
+        <h1 id="popup">JS Project</h1>
+      </div>
+      <div class="popup-col-2">
+        <p>This page gives you access to<br>Chef's Favorite Meals App.</p>
+        <div class="button-group">
+          <button class="close-btn" onclick="closePopup()">Close</button>
+          <button class="proceed-btn" onclick="proceedToApp()">Proceed</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Section -->
+  <h1 class="title">Portfolio.</h1>
+  <div class="portfolio-container">
+    <div class="new-grid">
+
+      <!-- First Grid Item -->
+      <div class="grid-column">
+        <div class="grid-row">
+          <img src="/Images/Portfolio Thumbnails/JS Project image.jpg" alt="JS Project Image" class="grid-image" />
+        </div>
+        <div class="grid-row">
+          <p class="grid-text">JS Project</p>
+        </div>
+        <div class="grid-row">
+          <button class="grid-button" onclick="openPopup()">Demo</button>
+        </div>
+        <div class="grid-row">
+  <a href="/downloads/JSProject.zip" class="grid-button" download="JSProject.zip">Download Project</a>
+</div>
+
+      </div>
+      <!-- Second Grid Item -->
+      <div class="grid-column">
+        <div class="grid-row">
+          <img src="/Images/Portfolio Thumbnails/Coming soon.jpg" alt="Coming Soon Image" class="grid-image" />
+        </div>
+        <div class="grid-row">
+          <p class="grid-text">Future Project</p>
+        </div>
+        <div class="grid-row">
+          <button class="grid-button">Demo</button>
+        </div>
+        <div class="grid-row">
+<button class="grid-button">Download</button>
+        </div>
+      </div>
+      <!-- Third Grid Item -->
+      <div class="grid-column">
+        <div class="grid-row">
+          <img src="/Images/Portfolio Thumbnails/Coming soon.jpg" alt="Coming Soon Image" class="grid-image" />
+        </div>
+        <div class="grid-row">
+          <p class="grid-text">Future Project</p>
+        </div>
+        <div class="grid-row">
+          <button class="grid-button">Demo</button>
+        </div>
+        <div class="grid-row">
+<button class="grid-button">Download</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <section id="contact">
+  <div class="contact-container">
+    <h1 class="title">Contact.</h1>
+    <div class="description-container">
+      <p class="description">Let's chat</p>
+    </div>
+    <div class="box">
+      <div class="row">
+        <div class="column">
+          <div class="links-container">
+            <a href="mailto:slhochfelden@gmail.com">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+            <p class="email">
+              <a href="mailto:slhochfelden@gmail.com">slhochfelden@gmail.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="links-container">
+            <a href="https://linkedin.com/in/stephanie-hochfelden-777124277" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <p class="linkedin">
+              <a href="https://linkedin.com/in/stephanie-hochfelden-777124277" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+<footer>
+  <div class="footer-wrapper">
+    <div class="socials">
+      <a href="https://github.com/Stephels" target="_blank" class="github-link">
+        <img src="/Images/socials/github.png" alt="GitHub" class="github-icon">
+      </a>
+    </div>
+    <p>&#169; 2025 Stephanie Hochfelden. All rights reserved</p>
+  </div>
+</footer>
+  </div>
+</section>
+    <script src="/JS/script.js"></script>
+    <script src="/JS/popup.js"></script>
+  </body>
+</html>

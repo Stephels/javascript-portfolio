@@ -1,0 +1,169 @@
+#services {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: auto;
+}
+
+#services h1 {
+  text-align: left;
+  margin-top: 100px;
+  padding-top: 40px;
+}
+
+.container-serv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.services-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.service {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+/* Flip Box Styles */
+.flip-box {
+  width: 300px;
+  height: 200px;
+  background-color: transparent;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  color: rgb(10, 22, 26);
+}
+
+.flip-box-front img {
+  width: 50px;
+  height: 50px;
+  opacity: 0.4;
+}
+
+.flip-box-front h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 20px;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+.flip-box-back {
+  transform: rotateY(180deg);
+}
+
+.flip-box-back p {
+  font-family: "Roboto", cursive;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.flip-box-back ul {
+  padding: 0 10px 0 40px;
+}
+
+.flip-box-back ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-align: left;
+  color: rgb(10, 22, 26);
+  list-style-type: disc;
+}
+
+/* Service Flip Box Color Configurations */
+.service:nth-child(3n + 1) .flip-box-front {
+  background-color: #ff5757;
+}
+
+.service:nth-child(3n + 1) .flip-box-back {
+  background-color: #ffcccc;
+}
+
+.service:nth-child(3n + 2) .flip-box-front {
+  background-color: #edb2ff;
+}
+
+.service:nth-child(3n + 2) .flip-box-back {
+  background-color: #f6daff;
+}
+
+.service:nth-child(3n + 3) .flip-box-front {
+  background-color: #f3a732;
+}
+
+.service:nth-child(3n + 3) .flip-box-back {
+  background-color: #ffdeac;
+}
+
+#logo {
+  width: 200px;
+  height: 200px;
+  opacity: 0.4;
+}
+
+/* --------------------- Media Queries --------------------------- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .services-box {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  #services h1 {
+    font-size: 80px;
+    text-align: center;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+  .services-box {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #services h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+}

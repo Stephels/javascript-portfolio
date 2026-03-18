@@ -1,0 +1,179 @@
+/* Dimmed background overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  display: none; /* Default state: hidden */
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure it's above all other content */
+}
+
+/* Pop-up content styling */
+.popup-content {
+  display: flex;
+  flex-direction: row; /* Default: Side-by-side columns */
+  width: 900px; /* Default width */
+  height: 400px; /* Default height */
+  padding: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  overflow: auto; /* Allow scrolling if needed */
+  border-radius: 10px; /* Rounded corners for a modern look */
+}
+
+.popup-col-1,
+.popup-col-2 {
+  flex: 1; /* Equal width for both columns */
+  display: flex;
+  flex-direction: column; /* Stack child elements vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 100%; /* Fill parent height */
+}
+
+/* Column 1 - Left (Title Section) */
+.popup-col-1 {
+  background-color: #f3a732; /* Bright orange background */
+}
+
+.popup-col-1 h1 {
+  color: #fff; /* White text */
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Column 2 - Right (Description and Buttons) */
+.popup-col-2 {
+  background-color: #fff; /* White background */
+}
+
+.popup-content p {
+  font-size: 20px; /* Larger text for readability */
+  margin: 30px 0; /* Vertical spacing */
+  line-height: 2rem;
+  font-family: "Roboto";
+  padding: 10px;
+}
+
+/* Button Styling */
+.button-group {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  justify-content: center; /* Center buttons horizontally */
+  align-items: center; /* Align content */
+}
+
+.close-btn,
+.proceed-btn {
+  padding: 1rem;
+  border-radius: 2rem;
+  height: 4rem; /* Button height */
+  width: 10rem; /* Button width */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 20px;
+  font-weight: 600; /* Bold text */
+  border: 0.1rem solid rgb(53, 53, 53); /* Border style */
+  text-align: center; /* Center text within button */
+  transition: all 300ms ease; /* Smooth hover effects */
+}
+
+.close-btn {
+  background-color: #fff; /* White background for Close */
+  color: #000; /* Black text */
+}
+
+.proceed-btn {
+  background-color: rgb(53, 53, 53); /* Dark background for Proceed */
+  color: #fff; /* White text */
+  border: none;
+}
+
+/* Hover Effects */
+.close-btn:hover {
+  background-color: #ff5757; /* Red background on hover */
+  color: #fff; /* White text on hover */
+  border: 0.1rem solid #ff5757; /* Red border on hover */
+}
+
+.proceed-btn:hover {
+  background-color: #edb2ff; /* Light purple background on hover */
+  border: 0.1rem solid #edb2ff; /* Purple border on hover */
+  color: rgb(53, 53, 53);
+}
+
+/* Prevent scrolling on the page when the popup is active */
+body.popup-active {
+  overflow: hidden;
+}
+
+/* RESPONSIVE DESIGN */
+/* Tablet screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .popup-content {
+    flex-direction: column; /* Stack columns vertically */
+    width: 90%; /* Reduce width to fit */
+    height: auto; /* Let height adjust based on content */
+    padding: 20px; /* Add some padding */
+  }
+
+  .popup-col-1,
+  .popup-col-2 {
+    flex: unset; /* Remove flex 1 for equal height */
+    height: auto; /* Adjust height to fit content naturally */
+  }
+
+  .popup-col-1 h1 {
+    font-size: 36px; /* Slightly smaller title */
+    padding: 16px;
+  }
+
+  .popup-content p {
+    font-size: 18px; /* Slightly smaller text */
+  }
+
+  .close-btn,
+  .proceed-btn {
+    height: 3.5rem; /* Smaller button height */
+    width: 8rem; /* Smaller button width */
+    font-size: 18px; /* Adjusted font size */
+  }
+  .button-group {
+    padding: 20px;
+  }
+}
+
+/* Mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .popup-content {
+    flex-direction: column; /* Stack columns */
+    width: 95%; /* Reduce width for mobile */
+    height: auto; /* Let it expand naturally */
+    padding: 10px; /* Smaller padding */
+  }
+
+  .popup-col-1 h1 {
+    font-size: 28px; /* Even smaller title */
+  }
+
+  .popup-content p {
+    font-size: 16px; /* Smaller text */
+  }
+
+  .close-btn,
+  .proceed-btn {
+    height: 3rem; /* Further adjust button height */
+    width: 7rem; /* Further adjust button width */
+    font-size: 16px;
+  }
+
+  .button-group {
+    padding: 20px;
+  }
+}

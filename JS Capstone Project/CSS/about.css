@@ -1,0 +1,318 @@
+#about {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: auto;
+}
+
+.about-container {
+  max-width: 1200px;
+  height: auto;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.about-container h1 {
+  text-align: right;
+  margin-top: 40px;
+}
+
+.about-content {
+  padding: 10px;
+  margin-bottom: 100px;
+}
+
+.about-content h2 {
+  font-size: 42px;
+  padding: 20px 0 10px;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 87, 87, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+#sub-subheading {
+  color: rgba(255, 87, 87, 0.6);
+  font-family: "Gloock";
+  font-size: 30px;
+  background-color: #fff;
+  text-align: right;
+  padding: 20px 20px 20px 40px;
+  float: right;
+  display: flex;
+}
+
+#lines-sub-subheading {
+  margin-top: 50px;
+  border: 1px solid rgba(255, 87, 87, 0.3);
+  border-left: none;
+  border-right: none;
+  padding: 30px;
+  border-radius: 0px;
+}
+
+.about-content p {
+  padding: 5px 0;
+}
+
+.about-content p::first-letter {
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.about-container ul {
+  list-style: inherit outside;
+}
+
+.about-container ul li {
+  margin: 5px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  line-height: 1.8rem;
+}
+
+/* ----------------- Skills & Tools Section ------------------------------- */
+#skills_tools {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(10, 22, 26);
+  font-family: "Roboto", sans-serif;
+}
+
+.tools-container {
+  margin: 60px 0 120px;
+  text-align: left;
+  width: 100%;
+}
+
+.tools-title {
+  font-size: 100px;
+  color: #fff;
+  text-transform: lowercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin-bottom: 60px;
+  padding: 20px;
+  letter-spacing: 1px;
+  max-width: 1200px;
+  margin-left: 300px;
+}
+
+.tools-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.tool-card {
+  width: 180px;
+  padding: 25px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-10px);
+}
+
+.tool-img {
+  width: 60%;
+  height: auto;
+  margin-bottom: 10px;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.tool-card:hover .tool-img {
+  filter: grayscale(0%);
+}
+
+.tool-name {
+  font-size: 16px;
+  color: #ddd;
+}
+
+.skills-container {
+  margin: 60px 0 120px;
+}
+
+.skills-container h2 {
+  font-size: 110px;
+  color: #fff;
+  text-transform: lowercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-align: right;
+  margin-bottom: 60px;
+  max-width: 1200px;
+  margin-left: 300px;
+  letter-spacing: 1px;
+  padding: 20px;
+}
+
+.skills-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 60px 0;
+}
+
+.skill-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  width: 275px;
+  background-color: rgb(248, 122, 122);
+  color: #fff;
+  padding: 15px 60px;
+  text-align: center;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-btn:hover {
+  background-color: rgb(255, 87, 87);
+  transform: scale(1.1);
+}
+
+.skill-btn:active {
+  transform: scale(1);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.skill-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.skill-item:hover img {
+  filter: grayscale(0%);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background-color: rgb(255, 87, 87);
+  width: 0;
+  transition: width 0.5s;
+}
+
+/* ----------------- Media Queries ------------------------------- 
+
+/* Tablets */
+@media (max-width: 1024px) {
+  #about h1 {
+    text-align: center;
+    font-size: 80px;
+    float: none;
+  }
+
+  .about-container {
+    padding: 20px;
+  }
+
+  .about-content h2 {
+    font-size: 36px;
+  }
+
+  #sub-subheading {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .about-content #para {
+    font-size: 18px;
+  }
+
+  .tools-title,
+  .skills-container h2 {
+    font-size: 80px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .tools-cards {
+    gap: 20px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+  #about h1 {
+    font-size: 60px;
+    text-align: center;
+    float: none;
+  }
+
+  .about-container {
+    padding: 10px;
+  }
+
+  .about-content #sub-subheading {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .about-content p {
+    font-size: 14px;
+  }
+
+  .tools-title,
+  .skills-container h2 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .tools-cards {
+    gap: 15px;
+  }
+
+  .skills-buttons {
+    gap: 10px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}

@@ -1,0 +1,314 @@
+/* Base Styles */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Gloock&family=Nothing+You+Could+Do&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* General Body Styling */
+body {
+  font-family: "Cormorant Garamond", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+
+header {
+  background-color: transparent;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+main {
+  margin: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  font-family: "Roboto";
+  font-weight: 200;
+}
+
+/* For Slideshow Images */
+.slideshow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 3s ease-in;
+}
+
+/* Set background images for each slide */
+.slide1 {
+  background-image: url("/Images/App Images/App Backgrounds/baked-meat-with-vegetables-wooden-stand.jpg");
+}
+
+.slide2 {
+  background-image: url("/Images/App Images/App Backgrounds/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce.jpg");
+}
+
+.slide3 {
+  background-image: url("/Images/App Images/App Backgrounds/dietary-menu-healthy-vegan-salad-vegetables-broccoli-mushrooms-spinach-quinoa-bowl-flat-lay-top-view.jpg");
+}
+
+.slide4 {
+  background-image: url("/Images/App Images/App Backgrounds/fried-egg-with-vegetables-plate.jpg");
+}
+
+.slide5 {
+  background-image: url("/Images/App Images/App Backgrounds/pasta-spaghetti-with-shrimps-sauce.jpg");
+}
+
+.slide6 {
+  background-image: url("/Images/App Images/App Backgrounds/side-view-spaghetti-with-pieces-meat-tomato-wooden-board.jpg");
+}
+
+.slide.active {
+  opacity: 0.5;
+}
+
+.logo img {
+  margin-top: 40px;
+  width: 150px;
+  height: auto;
+  padding: 10px;
+}
+
+/* Headings */
+h1 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 3px;
+  font-size: 32px;
+  color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+  line-height: 1.2;
+}
+
+/* Line below heading */
+.custom-line-container {
+  position: relative;
+}
+
+.custom-line-container::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%; /* Center the line */
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  margin: 24px;
+  background-color: rgb(255, 209, 171);
+}
+
+/* Instruction Section */
+.instructions {
+  display: grid;
+  margin: 40px 0;
+  place-items: center;
+  padding: 20px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.instructions,
+.button-container {
+  position: relative;
+  z-index: 0;
+}
+
+/* Buttons */
+.start-btn {
+  background-color: rgb(175, 117, 70, 0.8);
+  color: rgb(255, 255, 255);
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  border: none;
+  box-shadow: none;
+  margin: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+  background-color: rgb(206, 144, 93, 0.9);
+  color: white;
+  transform: scale(1.1);
+}
+
+.return-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  background-color: transparent;
+  padding: 8px 16px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.return-btn:hover {
+  transform: scale(1.5);
+}
+
+/* Responsive Styles */
+
+/* Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  header {
+    padding: 8px 16px;
+  }
+
+  main {
+    margin: 10px;
+    padding: 0 10px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  .logo img {
+    margin-top: 20px;
+    width: 100px;
+  }
+
+  .custom-line-container::after {
+    width: 300px;
+    height: 1px;
+    margin: 12px;
+  }
+
+  .start-btn {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .return-btn {
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    padding: 6px 12px;
+  }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  main {
+    margin: 15px;
+    padding: 0 15px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  h1 {
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+
+  .logo img {
+    margin-top: 30px;
+    width: 120px;
+  }
+
+  .custom-line-container::after {
+    width: 400px;
+    height: 1px;
+    margin: 16px;
+  }
+
+  .start-btn {
+    padding: 14px 28px;
+    font-size: 14px;
+  }
+
+  .return-btn {
+    top: 15px;
+    left: 15px;
+    font-size: 20px;
+    padding: 8px 16px;
+  }
+
+  .start-btn:hover {
+    background-color: rgb(250, 167, 100);
+    color: white;
+    transform: scale(1);
+  }
+}
+
+/* Desktop Screens (min-width: 769px) */
+@media (min-width: 769px) {
+  header {
+    padding: 20px 40px;
+  }
+
+  main {
+    margin: 20px 40px;
+    padding: 0 20px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  h1 {
+    font-size: 36px;
+    letter-spacing: 4px;
+  }
+
+  .logo img {
+    margin-top: 60px;
+    width: 200px;
+  }
+
+  .custom-line-container::after {
+    width: 600px;
+    height: 2px;
+    margin: 24px;
+  }
+
+  .start-btn {
+    padding: 16px 32px;
+    font-size: 16px;
+  }
+
+  .return-btn {
+    top: 30px;
+    left: 30px;
+    font-size: 32px;
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,191 @@
+#hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+}
+
+#hello {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#name {
+  font-family: "Roboto", sans-serif;
+  font-size: 62px;
+  font-weight: 900;
+  text-transform: lowercase;
+  color: #ff5757;
+}
+
+/* Columns in Hero Section */
+.hero-col1,
+.hero-col2 {
+  width: 50%;
+  padding: 20px;
+}
+
+.hero-col1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#profile {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Hero Text Styling */
+#text-1,
+#text-3 {
+  color: transparent;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  -webkit-text-stroke: 1px black;
+}
+
+#text-2 {
+  font-size: 80px;
+  color: black;
+}
+
+#text-4 {
+  font-size: 18px;
+  font-family: "Cormorant Garamond", serif;
+  color: black;
+  margin-top: 30px;
+}
+
+/* Hero Button */
+.hero-btn-container {
+  margin-top: 40px;
+  display: flex;
+}
+
+.hero-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  background-color: rgb(248, 122, 122);
+  color: #fff;
+  padding: 15px 60px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  width: 275px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: rgb(255, 87, 87);
+  transform: scale(1.1);
+}
+
+/* ------------------ Media Queries ------------------ */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  #hero {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .hero-col1,
+  .hero-col2 {
+    width: 100%;
+  }
+
+  #name {
+    font-size: 48px;
+  }
+
+  #text-2 {
+    font-size: 32px;
+  }
+
+  #text-1,
+  #text-3 {
+    font-size: 18px;
+  }
+
+  #text-4 {
+    font-size: 18px;
+  }
+
+  .hero-btn {
+    padding: 10px 40px;
+  }
+
+  .hero-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+  #hero {
+    padding: 0 10px;
+  }
+
+  .hero-container {
+    text-align: center;
+  }
+
+  .hero-col1,
+  .hero-col2 {
+    width: 100%;
+  }
+
+  #name {
+    font-size: 36px;
+  }
+
+  #text-2 {
+    font-size: 28px;
+  }
+
+  #text-1 {
+    font-size: 20px;
+  }
+
+  #text-3 {
+    font-size: 20px;
+  }
+
+  #text-4 {
+    font-size: 18px;
+  }
+
+  .hero-btn-container {
+    margin-top: 30px;
+  }
+}
